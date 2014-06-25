@@ -1,0 +1,42 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<article>
+		<form>
+			<input type="text" name="field" id="field" disabled="disabled" placeholder="0">
+			<section>
+				<input type="button"  value="7" onclick="calculator.escribirNumero(7)">
+				<input type="button"  value="8" onclick="calculator.escribirNumero(8)">
+				<input type="button"  value="9" onclick="calculator.escribirNumero(9)">
+				<input type="button"  value="/" onclick="calculator.operacion(4)">
+			</section>
+			<section>
+				<input type="button"  value="4" onclick="calculator.escribirNumero(4)">
+				<input type="button"  value="5" onclick="calculator.escribirNumero(5)">
+				<input type="button"  value="6" onclick="calculator.escribirNumero(6)">
+				<input type="button"  value="x" onclick="calculator.operacion(3)">
+			</section>
+			<section>
+				<input type="button"  value="3" onclick="calculator.escribirNumero(3)">
+				<input type="button"  value="2" onclick="calculator.escribirNumero(2)">
+				<input type="button"  value="1" onclick="calculator.escribirNumero(1)">
+				<input type="button"  value="-" onclick="calculator.operacion(2)">
+			</section>
+			<section>
+				<input type="button"  value="." onclick="calculator.escribirNumero('.')">
+				<input type="button"  value="0" onclick="calculator.escribirNumero(0)">
+				<input type="button"  value="=" onclick="calculator.operacion(0)">
+				<input type="button"  value="+" onclick="calculator.operacion(1)">
+			</section>
+			<section>
+				<input type="button" id="reset" name="reset" value="Clear" onclick="calculator.reset()">
+			</section>
+		</form>
+	</article>
+	<script src="calculadora.js"></script>
+</body>
+</html>
